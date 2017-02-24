@@ -1,11 +1,11 @@
 .container{
-  background: #f6ead4;
+  background: #000;
   position: absolute;
   top:0px;
-  bottom:0px;
+  bottom:60px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 .swiperimg{
   height: 397rpx;
@@ -14,6 +14,8 @@
   width: 750rpx;
   height: 397rpx;
 }
-.pad30-10{
-  padding: 30px 10px;
+.pad20-10{
+  position: fixed;
+  bottom: 0px;
+  padding: 20px 10px;
 }

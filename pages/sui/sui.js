@@ -4,7 +4,7 @@ var util = require('../../utils/util.js')
 Page({
   data: {
     logs: [],
-    videosrc:'https://xcx.txunda.com/Public/chs/108.mp4',
+    videosrc:'https://xcx.txunda.com/Public/chs/sui.mp4',
     Y:10,
     imgs:[
       "https://xcx.txunda.com/Public/img/sui2.jpg",
@@ -57,9 +57,9 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '茶化石',
-      desc: '“茶化石是龙园茶业专利产品，选用8年以上优质古树熟茶老茶经特殊切割工艺，反复筛选，精制而成，醇香，汤厚，棉滑滑，是普洱茶中的臻品。”',
-      path: '/pages/logs/logs'
+      title: '碎银子',
+      desc: '“碎银子是龙园茶业专利产品，选用8年以上优质古树熟茶老茶经特殊切割工艺，反复筛选，精制而成，醇香，汤厚，棉滑滑，是普洱茶中的臻品。”',
+      path: '/pages/sui/sui'
     }
   },
   gzgzh: function( res ){

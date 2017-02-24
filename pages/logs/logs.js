@@ -4,7 +4,6 @@ var util = require('../../utils/util.js')
 Page({
   data: {
     logs: [],
-    videosrc:'https://xcx.txunda.com/Public/chs/108.mp4',
     imgs:[
       "https://xcx.txunda.com/Public/lunbo/cha1.jpg",      
       "https://xcx.txunda.com/Public/lunbo/cha2.jpg",
@@ -15,32 +14,53 @@ Page({
       "https://xcx.txunda.com/Public/lunbo/cha7.jpg",
       "https://xcx.txunda.com/Public/lunbo/cha8.jpg",
       "https://xcx.txunda.com/Public/lunbo/cha9.jpg",
-      "https://xcx.txunda.com/Public/lunbo/cha10.jpg",
-      
-    ]
+      "https://xcx.txunda.com/Public/lunbo/cha10.jpg"
+    ],
+    text:"茶化石是一种高品质的普洱茶古树熟茶，是传统工艺和现代工艺的完美结合，因其原料选用西双版纳勐海古树茶区百年以上树龄春茶芽叶，工艺流程复杂，成品数量稀少，外形又酷似经历千万年风霜雨雪的小化石，故名茶化石。"
   },
-  onLoad: function () {
-    app.getUserInfo(function(userInfo){
-      //更新数据
-      console.log(userInfo);
-      wx.request({
-        url: 'https://xcx.txunda.com/index.php/Index/putchs',
-        data: {"name":userInfo.nickName,"imgsrc":userInfo.avatarUrl},
-        method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-        // header: {}, // 设置请求的 header
-        header: {
-            'content-type': 'application/x-www-form-urlencoded'
-        },
-        success: function(res){
-          // success
-          console.log( res );
-          if(res.statusCode == 200){
-            var userimg = res.data.data;
-            this.setData({"userimg":userimg})
-          }
-        }.bind(this)
-      })
-    }.bind(this));
+  onLoad: function ( options ) {
+    switch(options.type){
+      case "jin":
+        this.setData({
+          imgs:[
+            "https://xcx.txunda.com/Public/lunbo/jin1.jpg",      
+            "https://xcx.txunda.com/Public/lunbo/jin2.jpg",
+            "https://xcx.txunda.com/Public/lunbo/jin3.jpg",
+            "https://xcx.txunda.com/Public/lunbo/jin4.jpg",
+            "https://xcx.txunda.com/Public/lunbo/jin5.jpg",
+            "https://xcx.txunda.com/Public/lunbo/jin6.jpg",
+            "https://xcx.txunda.com/Public/lunbo/jin7.jpg",
+            "https://xcx.txunda.com/Public/lunbo/jin8.jpg",
+            "https://xcx.txunda.com/Public/lunbo/jin9.jpg",
+            "https://xcx.txunda.com/Public/lunbo/jin10.jpg"
+          ],
+          text:"金不换是一种高品质的普洱茶古树熟茶，是传统工艺和现代工艺的完美结合，因其原料选用勐海古茶区百年以上树龄的春茶芽叶，工艺流程复杂，所以成品数量稀少。在古代茶马古道上就有黄金易得此茶难觅的传说，因其品质高、数量少，弥足珍贵故而得名金不换。"
+        });
+        wx.setNavigationBarTitle({
+          title: '金不换'
+        });
+        break;
+      case "sui":
+        this.setData({
+          imgs:[
+            "https://xcx.txunda.com/Public/lunbo/sui1.jpg",      
+            "https://xcx.txunda.com/Public/lunbo/sui2.jpg",
+            "https://xcx.txunda.com/Public/lunbo/sui3.jpg",
+            "https://xcx.txunda.com/Public/lunbo/sui4.jpg",
+            "https://xcx.txunda.com/Public/lunbo/sui5.jpg",
+            "https://xcx.txunda.com/Public/lunbo/sui6.jpg",
+            "https://xcx.txunda.com/Public/lunbo/sui7.jpg",
+            "https://xcx.txunda.com/Public/lunbo/sui8.jpg",
+            "https://xcx.txunda.com/Public/lunbo/sui9.jpg",
+            "https://xcx.txunda.com/Public/lunbo/sui10.jpg"
+          ],
+          text:"碎银子是一种高品质的普洱茶古树熟茶，是传统工艺和现代工艺的完美结合，因其原料选用西双版纳古茶区百年以上树龄的春茶芽叶，工艺流程复杂，所以成品数量稀少。在古代茶马古道上可以代替银两作交易用，又因外形精致小巧酷似散碎银两，故名碎银子。"
+        });
+        wx.setNavigationBarTitle({
+          title: '碎银子'
+        });
+        break;
+    }
   },
   onShow:function(){
     var animation = wx.createAnimation({
@@ -49,7 +69,6 @@ Page({
         transformOrigin: "50% 50%",
       });
     setInterval(function() {
-      
       var  y = -this.data.Y;
       animation.translateY(y).step()
       this.setData({
@@ -58,6 +77,11 @@ Page({
       })
     }.bind(this), 1000);
 
+  },
+  goback: function(){
+    wx.navigateBack({
+      delta: 1
+    });
   },
   onShareAppMessage: function () {
     return {
@@ -72,12 +96,7 @@ Page({
     wx.showModal({
       title: '提示',
       content: '请点右上角分享给朋友吧！',
-      showCancel: false,
-      success: function(res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-        }
-      }
+      showCancel: false
     })
 
 

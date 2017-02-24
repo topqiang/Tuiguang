@@ -59,7 +59,7 @@ Page({
     return {
       title: '茶化石',
       desc: '“茶化石是龙园茶业专利产品，选用8年以上优质古树熟茶老茶经特殊切割工艺，反复筛选，精制而成，醇香，汤厚，棉滑滑，是普洱茶中的臻品。”',
-      path: '/pages/logs/logs'
+      path: '/pages/index/index'
     }
   },
   gzgzh: function( res ){
