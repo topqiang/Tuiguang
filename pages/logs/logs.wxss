@@ -1,0 +1,19 @@
+.container{
+  background: #f6ead4;
+  position: absolute;
+  top:0px;
+  bottom:0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.swiperimg{
+  height: 397rpx;
+}
+.slide-image{
+  width: 750rpx;
+  height: 397rpx;
+}
+.pad30-10{
+  padding: 30px 10px;
+}

@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+<view class="container">
+   <swiper class="width swiperimg" indicator-dots="true" autoplay="true" interval="1000">
+    <block wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="ih30 pad30-10 fs14" style="text-indent:2em;">
+    茶化石是一种高品质的普洱茶古树熟茶，是传统工艺和现代工艺的完美结合，因其原料选用西双版纳勐海古树茶区百年以上树龄春茶芽叶，工艺流程复杂，成品数量稀少，外形又酷似经历千万年风霜雨雪的小化石，故名茶化石。
+  </view>
+</view>

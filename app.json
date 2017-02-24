@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/sui/sui",
+    "pages/jin/jin"
+  ],
+  "window": {
+      "navigationBarBackgroundColor": "#000",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "茶化石",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "backgroundColor": "#fff",
+    "selectedColor": "#000",
+    "list": [{
+      "iconPath": "img/icon.png",
+      "pagePath": "pages/index/index",
+      "selectedIconPath": "img/chaon.png",
+      "text": "茶化石"
+    }, {
+      "iconPath": "img/icon.png",
+      "pagePath": "pages/sui/sui",
+      "selectedIconPath": "img/suion.png",  
+      "text": "碎银子"
+    }, {
+      "iconPath": "img/icon.png",
+      "pagePath": "pages/jin/jin",
+      "selectedIconPath": "img/jinon.png",
+      "text": "金不换"
+    }]
+  },
+   "debug": true
+}

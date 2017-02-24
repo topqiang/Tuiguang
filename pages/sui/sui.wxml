@@ -1,0 +1,29 @@
+<!--logs.wxml-->
+<view class="container">
+    <view class="image"><image class="img1" src="/img/sui1.jpg"></image></view>
+    <view animation="{{animationData}}">
+      <image src="/img/0.png" class="loadimg"></image>
+    </view>
+    <view class="goodsimg">
+      <video id="myVideo" src="{{videosrc}}"  controls autoplay="true" ></video>
+    </view>
+    <navigator class="width" url="/pages/logs/logs">
+      <view class="bgred width colfff texcen fs14" style="line-height: 80rpx;">更多茶化石美图，点这里</view>
+    </navigator>
+    <view class="image" wx:for="{{imgs}}" wx:for-item="imgobj"><image class="img1" src="{{imgobj}}"></image></view>
+    <view class="image2"><image class="img2" src="/img/sui9.jpg"></image></view>
+    
+
+    <view class="texcen colfff ih30 fs14 width">
+      <view class="bgyel">关注的人</view>
+      <view class="touxiang texcen">
+        <view class="arcimgbag" wx:for="{{userimg}}" wx:for-item="user">
+          <view class="arcimg">
+          <image mode="scaleToFill" src="{{user.imgsrc}}"></image>
+          </view>
+          <view>{{user.name}}</view>
+        </view>
+      </view>
+      <view class="bgred" bindtap="gzgzh" style="line-height: 80rpx;">分享给朋友</view>    
+    </view>
+</view>
