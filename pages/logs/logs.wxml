@@ -1,14 +1,15 @@
 <!--logs.wxml-->
 <view class="container">
   <view class="colfff fs14 texcen width">
-  <text class="ih30" bindtap="goback">点击返回</text>
-   <swiper class="width swiperimg" indicator-dots="true" autoplay="true" interval="4000">
-    <block wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
-      <swiper-item>
-        <image src="{{item}}" class="slide-image" width="355" height="150"/>
-      </swiper-item>
-    </block>
-  </swiper>
+    <text class="ih40" bindtap="goback">往右方划动返回或者点这里返回</text>
+    <swiper class="width swiperimg" indicator-dots="true" autoplay="true" interval="4000">
+      <block wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view style="height:50px;"></view>
   </view>
 </view>
 <view class="ih30 pad20-10 fs14 colfff" style="text-indent:2em;">
