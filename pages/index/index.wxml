@@ -1,6 +1,6 @@
 <!--logs.wxml-->
 <view class="container">
-    <view class="image"><image class="img1" src="/img/1.jpg"></image></view>
+    <view class="image"><image class="img1" src="/img/1.png"></image></view>
     <view animation="{{animationData}}">
       <image src="/img/0.png" class="loadimg"></image>
     </view>

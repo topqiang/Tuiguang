@@ -11,7 +11,7 @@
       <view class="bgred width colfff texcen fs14" style="line-height: 80rpx;">更多金不换美图，点这里</view>
     </navigator>
     <view class="image" wx:for="{{imgs}}" wx:for-item="imgobj"><image class="img1" src="{{imgobj}}"></image></view>
-    <view class="image2"><image class="img2" src="/img/jin9.jpg"></image></view>
+    <view class="image2"><image class="img2" src="/img/jin7.png"></image></view>
     
 
     <view class="texcen colfff ih30 fs14 width">

@@ -72,7 +72,7 @@ video{
   width: 100%;
 }
 .image2{
-  height: 600rpx;
+  height: 650rpx;
 }
 .img2{
   height: 100%;

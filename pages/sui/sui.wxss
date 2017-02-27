@@ -2,5 +2,5 @@
   background: rgb(233, 233, 233);
 }
 .image2{
-  height: 400rpx;
+  height: 700rpx;
 }

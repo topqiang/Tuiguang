@@ -7,13 +7,10 @@ Page({
     videosrc:'https://xcx.txunda.com/Public/chs/sui.mp4',
     Y:10,
     imgs:[
-      "https://xcx.txunda.com/Public/img/sui2.jpg",
-      "https://xcx.txunda.com/Public/img/sui3.jpg",
-      "https://xcx.txunda.com/Public/img/sui4.jpg",
-      "https://xcx.txunda.com/Public/img/sui5.jpg",
-      "https://xcx.txunda.com/Public/img/sui6.jpg",
-      "https://xcx.txunda.com/Public/img/sui7.jpg",
-      "https://xcx.txunda.com/Public/img/sui8.jpg"
+      "https://xcx.txunda.com/Public/img/sui2.png",
+      "https://xcx.txunda.com/Public/img/sui3.png",
+      "https://xcx.txunda.com/Public/img/sui4.png",
+      "https://xcx.txunda.com/Public/img/sui5.png"
     ],
     userimg:[]
   },
