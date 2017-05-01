@@ -1,0 +1,10 @@
+<scroll-view class="conten" scroll-y="true">
+    <image src="/img/bg.png" class="bg"></image>
+    <view class="pore">
+        <map polyline="{{polyline}}" longitude="{{centerlng}}" latitude="{{centerlat}}" scale="8"></map>
+        <view class="bgwhi seardiv pad10 fs14" wx:for="{{addarr}}" wx:for-item="obj">
+            <view><text class="coly">{{obj.text}}</text></view>
+        </view>
+
+    </view>
+</scroll-view>

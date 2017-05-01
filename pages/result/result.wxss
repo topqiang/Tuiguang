@@ -1,0 +1,60 @@
+/* pages/result/result.wxss */
+.searchdiv input{
+    text-align: left;
+    background: #fff;
+    border-radius: 4px;
+    height: 100%;
+    padding: 10rpx 20rpx;
+    flex: 1;
+}
+.blockbtn{
+    padding: 0rpx 40rpx;
+    background: url('/img/block.png') no-repeat;
+    background-size: 100% 60rpx;
+    background-color: rgb(190, 138, 2);
+    text-align: center;
+    color: #fff;
+    font-size: 30rpx;
+    line-height: 60rpx;
+    border-radius: 4rpx;
+    height: 60rpx;
+    margin-left: 40rpx;
+}
+.goodinfo{
+    margin: 0rpx 40rpx;
+    border-radius: 4px;
+}
+.gimgbag{
+    background:#fff;
+    padding: 20rpx;
+}
+.gimgbag image{
+    width: 500rpx;
+    height: 300rpx;
+    border: 8px solid #FFF;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 21px #aaa;
+    margin-bottom: 20rpx;
+}
+.contitle{
+    background: #E7DACE;
+    line-height: 70rpx;
+    color: #fff;
+    text-align: left;
+    padding-left: 20rpx;
+    font-size: 12px;
+}
+.botbtn{
+    background: url('/img/bot.png') no-repeat;
+    background-color: rgb(33, 155, 65);    
+    background-size: 300rpx 60rpx;
+    width: 300rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin: 40rpx auto;
+    border-radius: 30rpx;
+    color: #fff;
+}
+navigator{
+    color: blue;
+}

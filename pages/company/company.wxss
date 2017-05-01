@@ -1,0 +1,4 @@
+/* pages/company/company.wxss */
+.mycity{
+    margin-top: 100rpx;
+}

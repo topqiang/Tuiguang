@@ -1,0 +1,36 @@
+<view class="conten">
+    <image src="/img/bg.png" class="bg"></image>
+    <view class="goodinfo pore">
+        <view class="searchdiv bgwhit">
+            <view class="texlef fs14 ih30 pad10">
+                <view class="giitem">
+                    <text class="letext">店铺地址</text>
+                    <text class="texrig coleee">{{data.address}}</text>                    
+                </view>
+                <view class="giitem">
+                    <text class="letext">负责人员</text>
+                    <text class="texrig coleee">{{data.boss}}</text>                    
+                </view>
+                <view class="giitem">
+                    <text class="letext">代理产品</text>
+                    <text class="texrig coleee">{{data.paygoods}}</text>                    
+                </view>
+                <view class="giitem" wx:if="{{city && data.wxcode}}">
+                    <text class="letext">联系电话</text>
+                    <text class="texrig coleee">{{data.wxcode}}</text>                    
+                </view>
+                <view class="giitem">
+                    <text class="letext">代理期限</text>
+                    <text class="texrig coleee">{{data.b_time}}--{{data.e_time}}</text>   
+                </view>
+            </view>
+        </view>
+         <view class="circle fs14 ih30" bindtap="showadd">
+            <view style="display:inline-block;">
+                <image src="/img/go.png" class="detialicon"></image>
+                <text class="iconadd">带我去这里</text>
+            </view>
+         </view>
+    </view>
+    
+</view>

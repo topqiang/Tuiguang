@@ -64,7 +64,6 @@ Page({
   },
   gzgzh: function( res ){
     console.log( res );
-
     wx.showModal({
       title: '提示',
       content: '请点右上角分享给朋友吧！',

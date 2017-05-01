@@ -8,6 +8,30 @@
   box-sizing: border-box;
   width: 750rpx;
 }
+.conten{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+    background-color: #f6ead4;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.bg{
+  position: fixed;
+  top:0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+.pore{
+  position: relative;
+  z-index: 100;
+}
 .width{
   width: 100%;
 }
@@ -32,11 +56,17 @@
 .fs14{
   font-size: 28rpx; 
 }
+.fs20{
+  font-size: 40rpx;
+}
 .ih20{
   line-height: 40rpx;
 }
 .ih30{
   line-height: 60rpx;
+}
+.coly{
+  color: #A87B64;
 }
 .ih40{
   line-height: 80rpx;
@@ -112,4 +142,57 @@ video{
   width: 30px;
   height: 30px;
   transform:translateY(-40px);
+}
+.texlef{
+  text-align: left;
+}
+.bgwhi{
+  background: white;
+}
+.borb1px{
+  border-top: 1px solid #ccc;
+}
+.coleee{
+  color: #777;
+}
+.pad10{
+  padding: 20rpx 0rpx;
+}
+.texcen{
+  text-align: center;
+}
+.searchdiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 100rpx 40rpx 60rpx;
+}
+.mycity{
+    border-radius: 4px;
+    margin: 0rpx 40rpx 40rpx;
+}
+.cityitem{
+    text-align: left;
+    padding: 20rpx;
+    border-bottom: 1px solid #eee;
+}
+.circle{
+    height: 60rpx;
+    background: url('/img/circle.png') no-repeat center;
+    background-size: 300rpx 60rpx;
+    background-color: rgb(178,113,0);
+    width: 300rpx;
+    margin: 0px auto;
+    border-radius: 30rpx;
+    border: 0px;
+    color: #fff;
+}
+.letext{
+    width: 150rpx;
+    display: inline-block;
+}
+.borbot{
+    height: 60rpx;
+    border-bottom: 4rpx solid #ccc;
+    background:rgb(253,232,215);
+    width: 100%;
 }

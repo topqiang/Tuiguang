@@ -7,9 +7,10 @@
     <view class="goodsimg">
       <video id="myVideo" src="{{videosrc}}"  controls autoplay="true" ></video>
     </view>
-    <navigator class="width" url="/pages/logs/logs?type=cha">
+    <!--<navigator class="width" url="/pages/logs/logs?type=cha">
       <view class="bgred width colfff texcen fs14" style="line-height: 80rpx;">更多茶化石美图，点这里</view>
-    </navigator>
+    </navigator>-->
+    <view class="borbot"></view>
     <view class="image" wx:for="{{imgs}}" wx:for-item="imgobj"><image class="img1" src="{{imgobj}}"></image></view>
     <view class="image2"><image class="img2" src="/img/9.jpg"></image></view>
     

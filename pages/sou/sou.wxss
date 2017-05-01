@@ -1,0 +1,31 @@
+/* pages/sou/sou.wxss */
+input{
+    border-radius: 50px;
+    width: 300rpx;
+    height: 80rpx;
+    margin: 40rpx;
+    box-sizing: border-box;
+    padding: 8rpx;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #707070;
+    display:inline-block;
+    box-shadow: 0 2px 10px rgb(105,105,105);
+}
+.toplogo{
+    width: 500rpx;
+    height: 150rpx;
+    margin-top: 50rpx;
+}
+.circle{
+    height:80rpx;
+background:url('/img/circle.png') no-repeat center;
+background-color:rgb(178,113,0);
+background-size:300rpx 80rpx;
+width:300rpx;
+margin:0 auto;
+border-radius:30rpx;
+border:0px;
+color:#fff;
+line-height: 80rpx;
+}

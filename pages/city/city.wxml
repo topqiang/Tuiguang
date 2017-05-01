@@ -1,0 +1,22 @@
+<scroll-view class="conten" scroll-y="true">
+    <image src="/img/bg.png" class="bg"></image>
+    <view class="pore">
+    <view class="bgwhi searchdiv pad10 fs14">
+        <view>定位城市：<text class="coly" data-pro="{{city}}" bindtap="gocomp">{{city}}</text></view>
+    </view>
+
+    <view class="seadiv fs14">热门城市</view>
+    <view class="seadiv fs14 texcen bgwhi">
+        <text data-pro="北京" bindtap="gocomp">北京</text>
+        <text data-pro="山东" bindtap="gocomp">山东</text>
+        <text data-pro="广东" bindtap="gocomp">广东</text>
+        <text data-pro="云南" bindtap="gocomp">云南</text>
+    </view>
+
+    <view class="mycity fs14 bgwhi">
+        <block wx:for="{{data}}" wx:for-item="city">
+            <view class="cityitem" data-pro="{{city.provance}}" bindtap="gocomp">{{city.provance}}</view>
+        </block>       
+    </view>
+    </view>
+</scroll-view>

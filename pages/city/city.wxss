@@ -1,0 +1,19 @@
+/* pages/city/city.wxss */
+.pad10{
+    padding: 20rpx;
+}
+.seadiv{
+    display: flex;
+    border-radius: 4px;
+    justify-content: space-between;
+    margin: 0rpx 40rpx 40rpx;
+}
+.seadiv text{
+    display: inline-block;
+    width: 25%;
+    line-height: 60rpx;
+    border-right: 1px solid #eee; 
+}
+.seadiv text:last-child{
+    border-right: 0px;
+}

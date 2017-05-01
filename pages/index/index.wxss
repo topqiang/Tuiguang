@@ -1,0 +1,6 @@
+.borbot{
+    height: 60rpx;
+    border-bottom: 4rpx solid #ccc;
+    background:rgb(253,232,215);
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+/* pages/report/report.wxss */
+.inputd{
+    padding-left: 20rpx;
+    margin-bottom: 20rpx;
+    overflow: hidden;
+}
+.inputd text{
+    float: left;
+}
+.inputd image{
+    width: 160rpx;
+    height: 160rpx;
+}
+input,textarea{
+    line-height: 60rpx;
+    float: left;
+    padding-top: 6rpx;
+    max-height: 200rpx;
+}

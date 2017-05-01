@@ -1,9 +1,14 @@
 {
-  "pages":[
+  "pages":[    
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/sui/sui",
-    "pages/jin/jin"
+    "pages/companylist/companylist",        
+    "pages/report/report",  
+    "pages/address/address",      
+    "pages/city/city",
+    "pages/company/company",   
+    "pages/result/result",
+    "pages/sou/sou",
+    "pages/logs/logs"
   ],
   "window": {
       "navigationBarBackgroundColor": "#000",
@@ -21,17 +26,17 @@
       "iconPath": "img/icon.png",
       "pagePath": "pages/index/index",
       "selectedIconPath": "img/chaon.png",
-      "text": "茶化石"
+      "text": "简介"
     }, {
-      "iconPath": "img/icon.png",
-      "pagePath": "pages/sui/sui",
+      "iconPath": "img/sui.png",
+      "pagePath": "pages/sou/sou",
       "selectedIconPath": "img/suion.png",  
-      "text": "碎银子"
+      "text": "防伪查询"
     }, {
-      "iconPath": "img/icon.png",
-      "pagePath": "pages/jin/jin",
-      "selectedIconPath": "img/jinon.png",
-      "text": "金不换"
+      "iconPath": "img/tu.png",
+      "pagePath": "pages/logs/logs",
+      "selectedIconPath": "img/tuon.png",
+      "text": "图集"
     }]
   }
 }

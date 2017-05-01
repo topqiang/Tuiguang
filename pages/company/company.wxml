@@ -1,0 +1,8 @@
+<view class="conten">
+    <image src="/img/bg.png" class="bg"></image>
+    <view class="mycity fs14 bgwhi pore">
+        <block wx:for="{{data}}" wx:for-item="comp">
+            <view class="cityitem" data-cid="{{comp.id}}" bindtap="gocomp">{{comp.name}}</view>
+        </block>     
+    </view>
+</view>

@@ -1,0 +1,21 @@
+<!--pages/report/report.wxml-->
+<view class="conten">
+    <image src="/img/bg.png" class="bg"></image>
+    <view class="pore">
+        <view class="bgwhi ih30 texlef inputd">
+            <text>姓名：</text>
+            <input placeholder="您的姓名" placeholder-style="color:#ccc" bindblur="blurhandel" data-clum="name"/>
+        </view>
+        <view class="bgwhi ih30 texlef inputd">
+            <text>手机：</text>
+            <input placeholder="您的手机号" placeholder-style="color:#ccc" bindblur="blurhandel" data-clum="tel" type="number"/>
+        </view>
+        <view class="bgwhi ih30 texlef inputd">
+            <textarea placeholder="购买渠道" placeholder-style="color:#ccc" bindblur="blurhandel" data-clum="remark"/>
+            <image src="{{api}}/{{pic}}"></image>
+            <image src="/img/pic.png" bindtap="choseimg"></image>
+        </view>
+
+        <view class="circle fs14 ih30" bindtap="putdata">提交</view>
+    </view>
+</view>

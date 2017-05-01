@@ -1,0 +1,16 @@
+<view class="conten">
+    <image src="/img/bg.png" class="bg"></image>   
+    <view class="pore">
+        <image class="" src="/img/bg3.png" style="height:140rpx;width:200rpx;margin:100rpx auto 0px;display:block;"></image>
+        
+        <image class="toplogo" src="/img/bg2.png"></image>
+        <view class="ih30 coly">
+            <view class="fs14">勐海龙园茶业</view>
+            <view class="fs12">MengHai Longyuan Tea Industry</view>
+            <view class="fs20">茶化石防伪查询</view>
+        </view>
+
+        <input placeholder="输入十位防伪验证码" auto-focus bindblur="blurHandel"/>
+        <view class="circle" bindtap="goresult">查询</view>
+    </view>
+</view>

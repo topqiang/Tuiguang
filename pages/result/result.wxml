@@ -1,0 +1,41 @@
+<scroll-view class="conten" scroll-y="true">
+    <image src="/img/bg.png" class="bg"></image>
+<view class="pore">
+    <view class="searchdiv">
+        <input placeholder="请输入防伪码" value="{{code_name}}" bindblur="blurHandle"/>
+        <view class="blockbtn" bindtap="findcode">查询</view>
+    </view>
+
+
+    <view class="goodinfo">
+        <view class="contitle">查询结果</view>
+        <view wx:if="{{flag=='error'}}" class="gimgbag fs14 texlef">
+您输入的”{{code_name}}“没有对应的产品信息，请核对防伪识别码是否正确，或拨打客服电话0691-5170999进一步核实，谨防假冒。
+<navigator url="/pages/report/report" style="display:inline-block;">举报</navigator>
+            </view>
+        <view wx:elif="{{flag=='success'}}" class="gimgbag">
+            <image src="{{api}}/{{data.pic}}"></image>
+
+            <view class="texlef ih20 fs14 pad10">您输入的“{{data.codenum}}”是“{{data.name}}”产品，产品为正品。</view>
+
+            <view class="borb1px texlef ih30 fs14 pad10">
+                <view class="giitem">
+                    <text class="letext coleee">批次</text>
+                    <text>{{data.creatcode}}</text>                    
+                </view>
+                <view class="giitem">
+                    <text class="letext coleee">品名</text>
+                    <text>{{data.name}}</text>                    
+                </view>
+                <view class="giitem">
+                    <text class="letext coleee">生产日期</text>
+                    <text>{{data.ctime}}</text>                    
+                </view>
+            </view>
+        </view>
+
+        <navigator url="/pages/city/city" wx:if="{{flag!='error'}}"><view class="botbtn fs14">经销商查询</view></navigator>
+        <!--<navigator delta="1" open-type="navigateBack"><view class="botbtn fs14">返回</view></navigator>-->
+    </view>
+    </view>
+</scroll-view>

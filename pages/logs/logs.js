@@ -14,53 +14,23 @@ Page({
       "https://xcx.txunda.com/Public/lunbo/cha7.jpg",
       "https://xcx.txunda.com/Public/lunbo/cha8.jpg",
       "https://xcx.txunda.com/Public/lunbo/cha9.jpg",
-      "https://xcx.txunda.com/Public/lunbo/cha10.jpg"
+      "https://xcx.txunda.com/Public/lunbo/cha10.jpg",
+      "https://admin.lypuer.com/Public/xcx/t01.jpg",
+      "https://admin.lypuer.com/Public/xcx/t02.jpg",
+      "https://admin.lypuer.com/Public/xcx/t03.jpg",
+      "https://admin.lypuer.com/Public/xcx/t04.jpg",
+      "https://admin.lypuer.com/Public/xcx/t05.jpg",
+      "https://admin.lypuer.com/Public/xcx/t06.jpg",
+      "https://admin.lypuer.com/Public/xcx/t07.jpg",
+      "https://admin.lypuer.com/Public/xcx/t08.jpg",
+      "https://admin.lypuer.com/Public/xcx/t09.jpg",
+      "https://admin.lypuer.com/Public/xcx/t10.jpg",
+      "https://admin.lypuer.com/Public/xcx/t11.jpg"
     ],
     text:"茶化石是一种高品质的普洱茶古树熟茶，是传统工艺和现代工艺的完美结合，因其原料选用西双版纳勐海古树茶区百年以上树龄春茶芽叶，工艺流程复杂，成品数量稀少，外形又酷似经历千万年风霜雨雪的小化石，故名茶化石。"
   },
   onLoad: function ( options ) {
-    switch(options.type){
-      case "jin":
-        this.setData({
-          imgs:[
-            "https://xcx.txunda.com/Public/lunbo/jin1.jpg",      
-            "https://xcx.txunda.com/Public/lunbo/jin2.jpg",
-            "https://xcx.txunda.com/Public/lunbo/jin3.jpg",
-            "https://xcx.txunda.com/Public/lunbo/jin4.jpg",
-            "https://xcx.txunda.com/Public/lunbo/jin5.jpg",
-            "https://xcx.txunda.com/Public/lunbo/jin6.jpg",
-            "https://xcx.txunda.com/Public/lunbo/jin7.jpg",
-            "https://xcx.txunda.com/Public/lunbo/jin8.jpg",
-            "https://xcx.txunda.com/Public/lunbo/jin9.jpg",
-            "https://xcx.txunda.com/Public/lunbo/jin10.jpg"
-          ],
-          text:"金不换是一种高品质的普洱茶古树熟茶，是传统工艺和现代工艺的完美结合，因其原料选用勐海古茶区百年以上树龄的春茶芽叶，工艺流程复杂，所以成品数量稀少。在古代茶马古道上就有黄金易得此茶难觅的传说，因其品质高、数量少，弥足珍贵故而得名金不换。"
-        });
-        wx.setNavigationBarTitle({
-          title: '金不换'
-        });
-        break;
-      case "sui":
-        this.setData({
-          imgs:[
-            "https://xcx.txunda.com/Public/lunbo/sui1.jpg",      
-            "https://xcx.txunda.com/Public/lunbo/sui2.jpg",
-            "https://xcx.txunda.com/Public/lunbo/sui3.jpg",
-            "https://xcx.txunda.com/Public/lunbo/sui4.jpg",
-            "https://xcx.txunda.com/Public/lunbo/sui5.jpg",
-            "https://xcx.txunda.com/Public/lunbo/sui6.jpg",
-            "https://xcx.txunda.com/Public/lunbo/sui7.jpg",
-            "https://xcx.txunda.com/Public/lunbo/sui8.jpg",
-            "https://xcx.txunda.com/Public/lunbo/sui9.jpg",
-            "https://xcx.txunda.com/Public/lunbo/sui10.jpg"
-          ],
-          text:"碎银子是一种高品质的普洱茶古树熟茶，是传统工艺和现代工艺的完美结合，因其原料选用西双版纳古茶区百年以上树龄的春茶芽叶，工艺流程复杂，所以成品数量稀少。在古代茶马古道上可以代替银两作交易用，又因外形精致小巧酷似散碎银两，故名碎银子。"
-        });
-        wx.setNavigationBarTitle({
-          title: '碎银子'
-        });
-        break;
-    }
+    
   },
   onShow:function(){
     var animation = wx.createAnimation({
