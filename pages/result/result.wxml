@@ -2,7 +2,7 @@
     <image src="/img/bg.png" class="bg"></image>
 <view class="pore">
     <view class="searchdiv">
-        <input placeholder="请输入防伪码" value="{{code_name}}" bindblur="blurHandle"/>
+        <input placeholder="请输入防伪码" value="{{code_name}}" bindinput="blurHandle"/>
         <view class="blockbtn" bindtap="findcode">查询</view>
     </view>
 
